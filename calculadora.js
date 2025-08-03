@@ -51,6 +51,7 @@ function adicionar(numero) {
     }
     else if (numero == 23) {
         document.getElementById("telinha").innerHTML = "";
+        caracterEspecial = false;
     }
     else {
         document.getElementById("telinha").innerHTML += numero;
