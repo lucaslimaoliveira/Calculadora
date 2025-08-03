@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background: linear-gradient(45deg, #000000,#6a0dad,#c9a0dc);
+    height: 679px;
+}
+
+#botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    height: 420px;
+    width: 450px;
+    margin: 30px auto 0 auto;
+    gap: 20px;
+}
+#calculadora {
+    margin: 50px auto 0 auto;
+    background-color: black;
+    width: 500px;
+    border-radius: 20px;
+    height: 630px;
+}
+#parteDeCima {
+    width: 500px;
+    height: 150px;
+    display: flex;
+}
+#tela {
+    background-color: white;
+    width: 450px;
+    height: 100px;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+}
+.tecla {
+    display: flex;
+    border-radius: 20px;
+    background: linear-gradient(to top, #e0e0e0, #ffffff);
+    box-shadow: 0 4px 0 #b0b0b0, 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.tecla:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b0b0b0, 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.tecla p {
+    font-weight: bold;
+    font-size: 40px;
+    height: 10px;
+    margin-left: 38px;
+    margin-top: 20px;
+}
+#telinha {
+    margin-top: 17px;
+    text-align: end;
+    font-weight: bold;
+    font-size: 60px;
+    width: 450px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#telinha::-webkit-scrollbar {
+    display: none;
+}
